@@ -1,0 +1,197 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - helllo
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - see you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - thank you
+    - nice
+    - ok
+    - thanks
+    - yess fantastic
+    - yess man  fantastic
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - are you a human? or a bot?
+- intent: cpe_not_reachable
+  examples: |
+    - CPE not reachable
+    - My Service Not reachable
+    - uCPE is not reachable
+    - I Cannot access uCPE
+    - uCPE not accesible
+    - I am not able to access cpe
+    - Server not found
+    - Server error
+    - cant access your service
+    - im not able to access the server
+- intent: cpe_reachable_unable_toconnect_fleximanage
+  examples: |
+    - CPE is reachable but unable to connect to Fleximanage
+    - CPE is reachable but unable to connect with Flexi Manage
+    - Cannot connect to Fleximanage
+    - cannot access flexiedge
+    - not able to connect with fleximanage
+    - service is reachable but cannot access fleximanage
+    - my service is accesible but not able to fleximanage
+- intent: throughput_issue
+  examples: |
+    - Not able to get enough throughput
+    - I am not getting required speed
+    - Less throughput
+    - less download speed
+    - less upload speed
+    - low speed on my device
+    - im not getting promised speeds on my device
+    - i am not getting required speed
+- intent: latency_issue
+  examples: |
+    - Websites are loading slow
+    - I am not getting required latency at destination
+    - latency is really High
+    - i am facing packet drop issues
+    - Cannot access websites fast
+    - taking time to access websites
+    - packet drop in ping response
+    - unable to get optimal latency
+    - getting heavy packet loss
+    - i have latency issues
+    - latency issue
+    - packet drop
+    - i have network issues
+- intent: link_flapping
+  examples: |
+    - i have constant interruptions while browsing
+    - link flapping
+    - cant access links
+    - most links i am trying to access are unstable
+    - Im facing frequent link Failures
+    - my connection is not stable
+    - im facing poor connectivity problems
+    - facing service interruptions
+    - my links are  intermittently disconnecting
+- intent: menu
+  examples: |
+    - what can you do?
+    - what do you do?
+    - how can u help me?
+    - what issues can you solve
+- intent: nlu_fallback
+  examples: |
+    - who is us president
+    - djcndfjcnoscsncs
+    - who is US president
+    - fhjgctds dyvygkf tdyrdtufj vhvjhv kbjk
+    - dsgaetbdgre fgreDFB EFW
+    - WHO IS US PRESIDENT
+    - show me picture of lion
+    - who is us presiden
+    - fafvfknvkfdfd
+    - what is 4 + 7
+    - Who is us president
+- intent: forbidden
+  examples: |
+    - Unauthorised to access  operations.
+    - Unauthorised to perform operations.
+    - Not able to access particular page
+    - Current logged in account cannot access selected service plans.
+    - cannot access service plans.
+    - cannot create service for given account.
+    - cannot get discount
+    - discount invalid
+    - not able to update the page
+    - not able to access the webpage
+- intent: authentication_issue
+  examples: |
+    - Cannot login to the portal
+    - cannot login to the service
+    - not able to login with my account
+    - user credentials invalid
+    - wrong password
+    - wrong usernmae
+    - invalid username and password
+- intent: bad_request
+  examples: |
+    - Invalid value for packageType
+    - Invalid value for status
+    - Service plan rule is malformed
+    - Id in the URL does not match the id in the request body
+    - Service product body is malformed.
+    - Plan body is malformed
+    - Inventory product body is malformed
+- intent: not_found
+  examples: |
+    - No service plan found
+    - The ServiceProduct's productServiceType is not found
+    - Service product not found
+    - Not all rate profiles  found
+    - Not all discount profiles found
+    - DiscountProduct is not found
+    - i cannot find the discount product
+    - i cannot find the product
+- intent: order_not_placed
+  examples: |
+    - Order not placed
+    - Not able to place an order
+    - Order not updated
+    - order not available

@@ -1,0 +1,148 @@
+version: "2.0"
+stories:
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+- story: cpe not reachable
+  steps:
+  - intent: cpe_not_reachable
+  - action: utter_cpenotreachable_sol
+- story: cpe reachable but unable to connect with Fleximanage
+  steps:
+  - intent: cpe_reachable_unable_toconnect_fleximanage
+  - action: utter_unable_toconnect_fleximanage_sol
+- story: Throughput issue
+  steps:
+  - intent: throughput_issue
+  - action: utter_throughput_issue_sol
+- story: Packet Drop and latency issue
+  steps:
+  - intent: latency_issue
+  - action: utter_latency_issue_sol
+- story: Link flapping issue
+  steps:
+  - intent: link_flapping
+  - action: utter_link_flapping_sol
+- story: menu
+  steps:
+  - intent: menu
+  - action: utter_menu
+- story: Story from Conversation ID 61e22a845282407cb2ca73e93f91a5cc
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: menu
+  - action: utter_menu
+  - intent: latency_issue
+  - action: utter_latency_issue_sol
+  - intent: cpe_not_reachable
+  - action: utter_cpenotreachable_sol
+  - intent: throughput_issue
+  - action: utter_throughput_issue_sol
+  - intent: cpe_reachable_unable_toconnect_fleximanage
+  - action: utter_unable_toconnect_fleximanage_sol
+  - intent: link_flapping
+  - action: utter_link_flapping_sol
+  - intent: bot_challenge
+  - action: utter_iamabot
+  - intent: mood_great
+  - action: utter_happy
+- story: Story from Conversation ID c6eda64a63d241e88be95d433fe913cb
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: menu
+  - action: utter_menu
+  - intent: latency_issue
+  - action: utter_latency_issue_sol
+  - intent: mood_great
+  - action: utter_happy
+  - intent: nlu_fallback
+  - action: utter_fallback
+  - intent: nlu_fallback
+  - action: utter_fallback
+  - intent: deny
+  - action: utter_fallback
+#b2b 
+- story: forbidden path true
+  steps:
+  - intent: forbidden
+  - action: utter_forbidden
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: forbidden path false
+  steps:
+  - intent: forbidden
+  - action: utter_forbidden
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_default
+
+- story: authenticaton issue true
+  steps:
+  - intent: authentication_issue
+  - action: utter_authenticaton_sol
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: authenticaton issue false
+  steps:
+  - intent: authentication_issue
+  - action: utter_authenticaton_sol
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_default
+
+- story: bad request true
+  steps:
+  - intent: bad_request
+  - action: utter_bad_request_sol
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: bad request false
+  steps:
+  - intent: bad_request
+  - action: utter_bad_request_sol
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_default
+
+- story: not found happy
+  steps:
+  - intent: not_found
+  - action: utter_not_found_sol
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: not found sad
+  steps:
+  - intent: not_found
+  - action: utter_not_found_sol
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_default
+
+- story: order issue happy
+  steps:
+  - intent: order_not_placed
+  - action: utter_order_sol
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: order issue happy
+  steps:
+  - intent: order_not_placed
+  - action: utter_order_sol
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_default

@@ -1,0 +1,242 @@
+[
+  {
+    "text": "good afternoon",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.4938604235649109
+    }
+  },
+  {
+    "text": "good afternoon",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.4938604235649109
+    }
+  },
+  {
+    "text": "never",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "cpe_not_reachable",
+      "confidence": 0.42511072754859924
+    }
+  },
+  {
+    "text": "I am going to save the world",
+    "intent": "mood_great",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.4664706587791443
+    }
+  },
+  {
+    "text": "I am not getting required latency at destination",
+    "intent": "latency_issue",
+    "intent_prediction": {
+      "name": "throughput_issue",
+      "confidence": 0.9127476215362549
+    }
+  },
+  {
+    "text": "who is us president",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.00034725540899671614
+    }
+  },
+  {
+    "text": "djcndfjcnoscsncs",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.4828098714351654
+    }
+  },
+  {
+    "text": "correct",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.8868607878684998
+    }
+  },
+  {
+    "text": "bad network",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "latency_issue",
+      "confidence": 0.9972535371780396
+    }
+  },
+  {
+    "text": "so good",
+    "intent": "mood_great",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.8824812173843384
+    }
+  },
+  {
+    "text": "cant access your service",
+    "intent": "cpe_not_reachable",
+    "intent_prediction": {
+      "name": "link_flapping",
+      "confidence": 0.7394260168075562
+    }
+  },
+  {
+    "text": "who is US president",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.0002183736942242831
+    }
+  },
+  {
+    "text": "dsgaetbdgre fgreDFB EFW",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.643901526927948
+    }
+  },
+  {
+    "text": "y",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.8549066185951233
+    }
+  },
+  {
+    "text": "extremely good",
+    "intent": "mood_great",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.953415036201477
+    }
+  },
+  {
+    "text": "Not able to get enough throughput",
+    "intent": "throughput_issue",
+    "intent_prediction": {
+      "name": "cpe_not_reachable",
+      "confidence": 0.8279464840888977
+    }
+  },
+  {
+    "text": "show me picture of lion",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "latency_issue",
+      "confidence": 0.521722674369812
+    }
+  },
+  {
+    "text": "good night",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.7099118828773499
+    }
+  },
+  {
+    "text": "indeed",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "throughput_issue",
+      "confidence": 0.6427372097969055
+    }
+  },
+  {
+    "text": "that sounds good",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.9327225089073181
+    }
+  },
+  {
+    "text": "thank you",
+    "intent": "mood_great",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.676575243473053
+    }
+  },
+  {
+    "text": "nice",
+    "intent": "mood_great",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.9960578680038452
+    }
+  },
+  {
+    "text": "let's go",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.1983942687511444
+    }
+  },
+  {
+    "text": "cu",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.9790157079696655
+    }
+  },
+  {
+    "text": "have a nice day",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.996177077293396
+    }
+  },
+  {
+    "text": "of course",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "cpe_not_reachable",
+      "confidence": 0.08260922133922577
+    }
+  },
+  {
+    "text": "not really",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "cpe_not_reachable",
+      "confidence": 0.547641396522522
+    }
+  },
+  {
+    "text": "great",
+    "intent": "mood_great",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.9393646717071533
+    }
+  },
+  {
+    "text": "wonderful",
+    "intent": "mood_great",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.38823315501213074
+    }
+  },
+  {
+    "text": "WHO IS US PRESIDENT",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "cpe_reachable_unable_toconnect_fleximanage",
+      "confidence": 0.00015604478539898992
+    }
+  }
+]

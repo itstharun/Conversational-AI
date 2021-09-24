@@ -1,0 +1,128 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- menu:
+    use_entities: true
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- mood_great:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- cpe_not_reachable:
+    use_entities: true
+- cpe_reachable_unable_toconnect_fleximanage:
+    use_entities: true
+- throughput_issue:
+    use_entities: true
+- latency_issue:
+    use_entities: true
+- link_flapping:
+    use_entities: true
+- nlu_fallback:
+    use_entities: true
+- forbidden:
+    use_entities: true
+- authentication_issue:
+    use_entities: true
+- bad_request:
+    use_entities: true
+- not_found:
+    use_entities: true
+- order_not_placed:
+    use_entities: true
+entities: []
+slots: {}
+responses:
+  utter_greet:
+  - text: Hey! This is KoKo. What can i help you with?
+  utter_did_that_help:
+  - buttons:
+    - payload: /affirm
+      title: Yes
+    - payload: /deny
+      title: No
+    text: Did that help you?
+  utter_cpenotreachable_sol:
+  - text: |-
+      Here are a List of Possible Reasons and steps: 
+       1.Please Check for any Power Outage at site . Ping WAN IP to know Power and Device Status.
+        2. Verify With Your Service Provider to Check if there is any issues within their Network. 
+       If There is any Outage,The service is likely to be reachable after Restoration.Try again after sometime.
+  utter_unable_toconnect_fleximanage_sol:
+  - text: |-
+      Please Verify if CPE is Reachbable. If it is Reachable But You are still not able to connect with Fleximanage It is mostly Due to Token Mismatch. 
+       Please Check if the Token Assigned is Valid or Not.
+  utter_throughput_issue_sol:
+  - text: |-
+      Please check upload & download speed and the Number of Devices connected to the network. Check without VPN's.Check with the Service provider regarding throughput. 
+       Usually It is a case of Outage in Internal network of Service Provider. If There is any Outage,The service is likely to be reachable after Restoration.Try again after sometime.
+  utter_latency_issue_sol:
+  - text: |2-
+       Verify Utilisation and Ping destination IP,Collect Forward and Reverse Traceroute.
+       This might be a case of ineffective routing to the destination and packet drops. Check with the service provider for network status.
+  utter_link_flapping_sol:
+  - text: |2-
+       Here are few possible steps to resolve the issue 
+       1. Ping WAN IP with large count 
+       2. Check Utilization and Device Uptime 
+       3. This can be a case of synchronisation issue. Check time offset to verify synchronisation in between Flexi Manage and Flexi Edge and verify service provider network.
+  utter_menu:
+  - buttons:
+    - payload: /cpe_not_reachable
+      title: I am not able to access the service/cpe
+    - payload: /cpe_not_reachable
+      title: Server Not Found
+    - payload: /throughput_issue
+      title: Low Download or Upload Speed
+    - payload: /authentication_issue
+      title: Cannot Login to the portal
+    text: |-
+      I am KOKO the Bot. I can help you with any queries or issues regarding our services.
+       Ask me any questions and I shall try my best to help you. Some possible issues are given below 
+  utter_fallback:
+  - text: Sorry,I couldnot handle that request .Please Elaborate the issue or Contact Technical Support.
+  utter_default:
+  - text: Sorry,I couldnot handle that request .Please Elaborate the issue or Contact Technical Support.
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_forbidden:
+  - text: |-
+      You are likely forbidden or Not Authorized access to the resource.
+       The Product (or) Service (or) Discount may belong to other account or is not valid.
+       Try logging in from a diffrent Account. Contact Support if not resolved.
+  utter_authenticaton_sol:
+  - text: |-
+      Kindly Check with your Username and password and try again. 
+      If not resolved, Clear browser cache in the settings or use a different browser and login.
+       If none of the options work ,kindly reset the password using the forgot password option.
+  utter_bad_request_sol:
+  - text: |-
+      Retry with a different data which includes all the Mandatory information. Make Sure the data is also valid.
+       If not resolved,Clear your Browser/Device cache and try again. Mandatory fields are shown with ( * ) symbol.
+  utter_not_found_sol:
+  - text: |-
+      Please Check if there are any filters applied on certain paramaters for the product or service.
+       Check if the url is right and valid. 
+       The Product might no longer exist or has been removed 
+  utter_order_sol:
+  - text: |-
+      Sorry for the inconvenience. It is possible that the product might be out of stock.  
+      Try Refreshing the page and login again to see updated status. If it is not resolved Kindly contact Customer Care.
+actions: []
+forms: {}
+e2e_actions: []
